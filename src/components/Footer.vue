@@ -1,0 +1,24 @@
+<template>
+  <footer>
+      <img src="../assets/logo.png" alt="" width="100">
+      <div class="nombres d-flex justify-content-center">
+      </div>
+  </footer>
+  </template>
+  <script>
+
+  export default {
+  name: 'footer', 
+  }
+  </script>
+  
+  <style>
+  footer {
+  background-color: #DAB6FC;
+/*     margin-top: 5em; */
+  padding: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: azure;
+  }
+  </style>
