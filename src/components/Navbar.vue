@@ -71,7 +71,7 @@
   transition: all 0.5s ease;
 }
 .link-nav:hover{
-  color: #F57ED2;
+  color: rgb(115, 112, 112);
   transform: scale(1.2);
 }
 .list-item{
@@ -82,7 +82,7 @@
   color: azure;
   border: none;
   transition: all 0.5s ease;
-  background-color: #F57ED2;
+  background-color: black;
 }
 .btn-logout:hover{
   transform: scale(1.2);
@@ -96,11 +96,11 @@
   color: azure;
 }
 .btn.btn-si{
-  background-color: #f082bf;
+  background-color: rgb(0, 10, 0);
   color: azure;
 }
 .btn.btn-si:hover{
-  background-color: #d676ab;
+  background-color: rgb(1, 51, 1);
   color: azure;
 }
 #exampleModal{
