@@ -1,50 +1,118 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div id="carouselDomo" class="carousel slide carousel-fade">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://www.ecocamp.travel/hubfs/2%20-%20Domo%20Suite_resultado.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="https://domosprefabricados.cl/images/slider/1.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/logo.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDomo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselDomo" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+  <div id="carouselDomos" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselDomos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselDomos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselDomos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" v-for= "domo in domos" :key="domo.id" >
+      <img :src= "domo.image" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ domo.name }}</h5>
+        <p>{{ domo.description }}</p>
+        <a :href="'#'+domo.id">Ver más</a>
       </div>
     </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselDomos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselDomos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<section v-for="domo in domos" class="container" :id ="domo.id">
+  <div class="row">
+    <h2>{{ domo.name }}</h2>
     
   </div>
-</template>
+  <div class="row">
+    <div class="col">
+      <img :src= "domo.image" class="d-block w-100" alt="...">
+    </div>
+    <div class="col">
+      <p class="descripcion">{{ domo.description }}</p>
+      <div class="precio">{{ domo.price }}</div>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#modalReserva" class="btn btn-primary">Reservar</button>
+    </div>
+  </div>
+</section>
 
+<div class="modal" id="modalReserva" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="text-center">
+              <!-- TUERCA -->
+            </div>
+            <button type="button" class="close ms-auto" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <h5 class="modal-title text-center">NOS ESTAMOS PREPARANDO PARA TI</h5>
+          <div class="modal-body text-center">
+            Disculpa las molestias, estamos preparando un mejor paraiso. Queremos darte lo mejor. 
+          
+          <form>
+
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Nombre">
+          </div>
+
+          <label for="mail">Email address</label>
+          <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</template>
 <script>
-// import HelloWorld from '@/components/HelloWorld.vue'
+import { mapState } from 'vuex';
+import { Domos } from '@/services/Domos.js';
 
 export default {
-  name: 'HomeView',
+  name: "domos",
   components: {
-    // HelloWorld
+  },
+  data() {
+    return {
+      domos: [],
+      cargando: false
+    };
+  },
+  computed: {
+    ...mapState(['domos'])
+  },
+  created: async function () {
+    try {
+      this.cargando = true;
+      // Simulación de obtención de datos desde el archivo Domos.js
+      this.domos = Domos.getAllDomos();
+      console.log(this.domos);
+      this.cargando = false;
+    } catch (error) {
+      console.error(error);
+    }
   }
-}
+};
 </script>
 
 <style>
-
-
-.carousel-item img{
-  height: 700px;
+#carouselDomos img {
+  width: 100%;
+  height: 600px;
   object-fit: cover;
 }
+
+
 </style>

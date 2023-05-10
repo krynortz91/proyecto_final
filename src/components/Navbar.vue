@@ -6,11 +6,12 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+      
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <router-link class="link-nav px-3" to="/">Inicio</router-link>
             <router-link class="link-nav px-3" to="/domos">Domos</router-link>
-            <router-link class="link-nav px-3" to="/productos">Souvenirs</router-link>
+            <router-link class="link-nav px-3" to="/souvenirs">Souvenirs</router-link>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,32 +59,33 @@
 }
 .navbar{
   list-style-type: none;
-  background-color: #DAB6FC;
-  color: azure;
+  background-color: #F2F0EB ;
+  /* background-color: #DAB6FC; */
+  color: #F2F0EB ;
   padding: .5rem 2rem;
   font-size: 16px;
   margin: 0%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .link-nav{
   text-decoration: none;
-  color: azure;
+  color: #DAB6FC;
   transition: all 0.5s ease;
 }
 .link-nav:hover{
   color: rgb(115, 112, 112);
   transform: scale(1.2);
 }
-.list-item{
+.list-item {
   cursor: pointer;
 }
-.btn-logout{
+/* .btn-logout{
   text-decoration: none;
   color: azure;
   border: none;
   transition: all 0.5s ease;
   background-color: black;
-}
+}  */
 .btn-logout:hover{
   transform: scale(1.2);
 }
@@ -104,6 +106,6 @@
   color: azure;
 }
 #exampleModal{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 </style>

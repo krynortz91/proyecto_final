@@ -18,15 +18,16 @@
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', arial, verdana;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #494847;
 }
 
 nav {
   padding: 30px;
+  color: #F2F0EB;
 }
 
 nav a {

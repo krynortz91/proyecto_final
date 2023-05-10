@@ -5,18 +5,18 @@
     </video>
     <div class="hero__content">
       <h1 class="hero__title">Conectando con la tierra</h1>
-      <p class="hero__text">TEXTO DEL HERO</p>
+      <p class="hero__text">Escapa del bullicio de la ciudad y relájate en la naturaleza</p>
       <!-- <a class="hero__link"><p></p></a> -->
     </div>
   </section>
 
   <section id="quienessomos" class="container">
     <div class="row">
-      <h2 class="col">QUIENES SOMOS</h2>
+      <h2 class="col">Quienes Somos</h2>
     </div>
     
     <div class="seccion__content row">
-      <p class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil neque asperiores provident placeat excepturi possimus architecto incidunt quo consequuntur quia.</p>
+      <p class="col">Somos una empresa dedicada a ofrecer una experiencia única de alojamiento en domos sustentables en la hermosa tierra austral. Nos enorgullece proporcionar un ambiente ecológico y sostenible para nuestros huéspedes, mientras disfrutan de una estadía cómoda y tranquila en medio de la naturaleza. ¡Bienvenidos a nuestro paraíso patagónico!</p>
     </div>
   </section>
 </template>
@@ -73,7 +73,7 @@ export default {
   }
 
   .container{
-    background-color: gray;
+    background-color: none;
   }
   @media screen and (min-width: 768px) {
     .hero__title{
