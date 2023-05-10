@@ -56,6 +56,7 @@ export default {
     font-size: 64px;
     font-size: 32px;
     margin-bottom: 20px;
+
   }
   .hero__text{
       color: #FFF;

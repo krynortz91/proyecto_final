@@ -12,7 +12,6 @@
     <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="8" aria-label="Slide 9"></button>
     <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="9" aria-label="Slide 10"></button>
     <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="10" aria-label="Slide 11"></button>
-    
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active" v-for= "souvenir in souvenirs" :key="souvenir.id" >

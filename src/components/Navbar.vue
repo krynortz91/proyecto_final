@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="../assets/logo.png"  alt="" width="60"></a>
-        <p>Domos Patagonia Viva</p>
+        <p class="title">Domos Patagonia Viva</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,6 +67,13 @@
   font-size: 16px;
   margin: 0%;
   font-family: 'Poppins', sans-serif;
+}
+.title {
+  font-size: 20px;
+  font-weight: 300;
+  font-style:initial;
+  margin: 0%;
+  color: black;
 }
 .link-nav{
   text-decoration: none;

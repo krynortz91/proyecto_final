@@ -46,25 +46,26 @@
         <div class="modal-content">
           <div class="modal-header">
             <div class="text-center">
+             
               <!-- FORMULARIO-->
             </div>
             <button type="button" class="close ms-auto" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <h5 class="modal-title text-center">NOS ESTAMOS PREPARANDO PARA TI</h5>
-          <div class="modal-body text-center">
+          <h5 class="modaltexto">NOS ESTAMOS PREPARANDO PARA TI</h5>
+          <div class="modaltextobody">
             Disculpa las molestias, estamos preparando un mejor paraiso. Queremos darte lo mejor. 
           
           <form>
 
           <div class="form-group">
-            <label for="name">Nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="Nombre">
+            <label for="name">Nombre y Apellido</label>
+            <input type="text" class="form-control" v-model="nombre" id="name" placeholder="Nombre y Apellido">
           </div>
 
-          <label for="mail">Email address</label>
-          <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+          <label for="mail">Tu correo</label>
+          <input type="email" class="form-control" v-model="mail" id="mail" placeholder="name@example.com">
 
           <label for="selection">¿Quieres recibir info sobre actividades y tours?</label>
           <select class="form-control" id="selection">
@@ -72,7 +73,7 @@
           <option>No, gracias, en otro momento.</option>
           </select>
 
-          <button type="submit">Enviar</button>
+          <button  @click.prevent="validarDatos()" type="submit">Enviar</button>
         </form>
       </div>
           <div class="modal-footer">
@@ -93,7 +94,9 @@ export default {
   data() {
     return {
       domos: [],
-      cargando: false
+      cargando: false,
+      nombre: "",
+      mail:""
     };
   },
   computed: {
@@ -109,16 +112,39 @@ export default {
     } catch (error) {
       console.error(error);
     }
+  },
+  methods: {
+    validarDatos() {	
+      if (!this.nombre){
+        // console.log("faltatexto");
+        alert("Falta el nombre");
+      }
+      else if (!this.mail){
+        // console.log("faltatexto");
+        alert("Falta el correo");
+      }
+      else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(this.correoIngresado)){
+        // console.log("faltatexto");
+        alert("Correo no válido");
+      }
+      
+    
   }
-};
+}
+}
 </script>
 
-<style>
+<style scoped>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,300&display=swap');
 #carouselDomos img {
   width: 100%;
   height: 600px;
   object-fit: cover;
 }
+
+
 
 
 </style>

@@ -2,7 +2,7 @@ export class Souvenirs {
     static souvenirs = [
       { 
         "id": 1,
-        "name": "Huiña Cat",
+        "name": "Gato Huiña",
         "description": "Hecho por artesanos locales, hermosos gatitos huiñas",
         "price": "10990",
         "image": "https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/70097547_2631187440249674_2077529449770778624_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGVKqtxyimCPy2OeONYGY7K3iYhrJeWC5XeJiGsl5YLlba0-VUlR269Ij7_q_QtzBc&_nc_ohc=y7DqjejGmVsAX97ZuGl&_nc_ht=scontent-scl2-1.xx&oh=00_AfCdewswIkNpmCMNKUeF4giWExrwvQvEEYyUtMpBGLxOwA&oe=647C9945",
