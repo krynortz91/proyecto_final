@@ -2,6 +2,7 @@
   <footer>
       <img src="../assets/logo.png" alt="" width="100">
       <div class="nombres d-flex justify-content-center">
+        <p>Karina Ortiz</p>
       </div>
   </footer>
   </template>
@@ -18,7 +19,8 @@
 /*     margin-top: 5em; */
   padding: 50px;
   text-align: center;
-  font-size: 14px;
+
+
   color: azure;
   }
   </style>

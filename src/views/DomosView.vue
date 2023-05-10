@@ -46,7 +46,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <div class="text-center">
-              <!-- TUERCA -->
+              <!-- FORMULARIO-->
             </div>
             <button type="button" class="close ms-auto" data-bs-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
@@ -65,6 +65,12 @@
 
           <label for="mail">Email address</label>
           <input type="email" class="form-control" id="mail" placeholder="name@example.com">
+
+          <label for="selection">¿Quieres recibir info sobre actividades y tours?</label>
+          <select class="form-control" id="selection">
+          <option>Si, por favor!</option>
+          <option>No, gracias, en otro momento.</option>
+          </select>
 
           <button type="submit">Enviar</button>
         </form>
