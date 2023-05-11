@@ -3,6 +3,10 @@ import HomeView from '../views/HomeView.vue'
 import DomosView from '../views/DomosView'
 import SouvenirsView from '../views/SouvenirsView'
 import FaunaView from '../views/FaunaView'
+import NotFound from '../views/NotFound'
+
+
+
 
 
 
@@ -27,7 +31,12 @@ const routes = [
     path: '/aves',
     name: 'aves',
     component: FaunaView
-  }
+  },
+  { 
+    path: '/:pathMatch(.*)*',
+    name: 'NotFoundView',
+    component: NotFound
+    }  
   // {
   //   path: '/products',
   //   name: 'products',

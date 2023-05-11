@@ -1,7 +1,7 @@
 <template>
 <section id="heroSouvenir">
   <img src="../assets/cover.jpg" alt="">
-  <p>Proximamente, nuevas sorpresas de nuestros artesanos locales.</p>
+  <p>EN CONSTRUCCION...Proximamente, nuevas sorpresas de nuestros artesanos locales.</p>
 </section>  
 <section v-for="souvenir in souvenirs" class="container" :id ="souvenir.id">
   <div class="row">
@@ -92,14 +92,14 @@ color: #c5c5c5;
   margin: 0;
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 60%;
+  top: 70%;
   left: 50%;
-  color: blanchedalmond;
+  color: black;
   font-size: large;
 }
 .descripcion {
   text-align: center;
-  
+
 }
 @media screen  and (min-width: 768px) {
   #heroSouvenir{

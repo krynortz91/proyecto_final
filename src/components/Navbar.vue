@@ -15,10 +15,10 @@
             <router-link class="link-nav px-3" to="/souvenirs">Souvenirs</router-link>
             <router-link class="link-nav px-3" to="/aves">Aves</router-link>
           </ul>
-          <form class="d-flex" role="search">
+          <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
+          </form> -->
         </div>
       </div>
     </nav>
