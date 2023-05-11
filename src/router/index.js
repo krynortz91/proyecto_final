@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DomosView from '../views/DomosView'
 import SouvenirsView from '../views/SouvenirsView'
+import FaunaView from '../views/FaunaView'
 
 
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/domos',
     name: 'domos',
     component: DomosView
+  },
+  {
+    path: '/aves',
+    name: 'aves',
+    component: FaunaView
   }
   // {
   //   path: '/products',
