@@ -144,7 +144,22 @@ export default {
   object-fit: cover;
 }
 
+.container {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  text-align: end;
+}
+.container p{
+  text-align: justify;
+  padding-top: 4rem;
 
+}
+  button {
+    background-color:#2c3e50;
+}
 
+.carousel-inner a {
+color: #c5c5c5;
+}
 
 </style>

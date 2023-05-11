@@ -15,8 +15,8 @@
             <router-link class="link-nav px-3" to="/souvenirs">Souvenirs</router-link>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
           </form>
         </div>
       </div>
@@ -54,7 +54,7 @@
 
 </script>
 
-<style>
+<style scoped>
 #login{
   cursor: pointer;
 }

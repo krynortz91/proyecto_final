@@ -13,7 +13,7 @@
   }
   </script>
   
-  <style>
+  <style scopeds>
   footer {
   background-color: #DAB6FC;
 /*     margin-top: 5em; */

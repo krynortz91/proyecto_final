@@ -11,7 +11,7 @@ export class Souvenirs {
         {
         "id": 2,    
         "name": "Chucao, Machucao",
-        "description": "Hermoso pajaro Chucao",
+        "description": "Hermoso pajaro Chucao vestido de sureño",
         "price": "12000",
         "image": "https://scontent-scl2-1.xx.fbcdn.net/v/t39.30808-6/292933842_1154271215129543_5176849082165993911_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeGvgAearm7Q5xRsN_uYvyXSCmOBmiKarm4KY4GaIpqubrOyKyEzDG0wenimWh1XkJM&_nc_ohc=cUaRLvQjYYYAX-dAjSh&_nc_ht=scontent-scl2-1.xx&oh=00_AfAD23tXr5LupbxrL03ZtPZDik7Zr02ze3NuIQ8YPfQPKw&oe=6459C041" ,
       },
@@ -53,23 +53,23 @@ export class Souvenirs {
       { 
         "id": 8,
         "name": "Tazón enlozado zorritos culpeo",
-        "description": "Hecho por artesanos locales, hermosos gatitos huiñas",
+        "description": "Hecho por artesanos locales, hermosos zorritos culpeo",
         "price": "10990",
         "image": "https://scontent.fscl11-2.fna.fbcdn.net/v/t1.6435-9/181974908_893619174528083_3471537033373321352_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeFC1_Ghs-xn1q2xxfiXohcy40iwH3AtfObjSLAfcC185ibkeImXIFsnjTtuZRMs1I0&_nc_ohc=jtzoimMjhPoAX-DFBl5&_nc_ht=scontent.fscl11-2.fna&oh=00_AfCCxwf4B-8iNDD7kO5BW0GcYXvsfQKFLpM4pv8XgJKFLA&oe=647E6185",
       },
       { 
         "id": 9,
         "name": "Tazón enlozado puma chileno",
-        "description": "Hecho por artesanos locales, hermosos gatitos huiñas",
+        "description": "Hecho por artesanos locales, hermoso puma chileno",
         "price": "10990",
         "image": "https://scontent.fscl11-2.fna.fbcdn.net/v/t1.6435-9/181569115_893619164528084_1049129734776684131_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeEs466jBUzN08jbwBQAsedbwUDwrcreownBQPCtyt6jCQ6PVz9WNoNV3ckxV50jvlE&_nc_ohc=SnQj5COngp4AX9yms5x&_nc_ht=scontent.fscl11-2.fna&oh=00_AfAlcdi7nwKNUvrBNdmn4najBWa3m9utA6yOAJ3oon-SuA&oe=647E71F6",
       },
       { 
         "id": 10,
-        "name": "Calendario",
-        "description": "Hecho por artesanos locales, hermosos gatitos huiñas",
+        "name": "Calendario 2024",
+        "description": "Hermosa fauna chilena ilustrada",
         "price": "10990",
-        "image": "https://scontent.fscl11-2.fna.fbcdn.net/v/t1.6435-9/156732867_860469864509681_4482749162162964543_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeF5IrnXEZkp8rxftU2kMdZhpQllnadyMuWlCWWdp3Iy5aPythOXIwIqKQV2KPC5RVo&_nc_ohc=mTNtZl2SHrcAX-uN8Cp&_nc_ht=scontent.fscl11-2.fna&oh=00_AfAIr_5r5UmUaQl02fg4K-esx63YozY5uSNw9mE4qhD4xg&oe=647E5DEA",
+        "image": "https://z-p3-scontent.fkna2-1.fna.fbcdn.net/v/t1.6435-9/145347611_841942236362444_2611261381240887567_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeHNAEBRGweIb6eDrLCn1rKvCSND4xdl2XwJI0PjF2XZfCxebQxFjrGQvsXPHPlJW_E&_nc_ohc=KPavdnHRwyoAX-0FGMP&_nc_ht=z-p3-scontent.fkna2-1.fna&oh=00_AfCEKjfNvsR3YjWwBX9B1MLu1HsxbWQNJDnGV59BtaX7Kw&oe=6483BEB2",
       },
 
          

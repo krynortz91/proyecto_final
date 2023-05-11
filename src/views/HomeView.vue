@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .hero {
     width: 100vw;
     position: relative;
@@ -56,6 +56,7 @@ export default {
     font-size: 64px;
     font-size: 32px;
     margin-bottom: 20px;
+ 
 
   }
   .hero__text{

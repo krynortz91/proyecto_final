@@ -1,37 +1,8 @@
 <template>
-  <div id="carouselSouvenirs" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="6" aria-label="Slide 7"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="7" aria-label="Slide 8"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="8" aria-label="Slide 9"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="9" aria-label="Slide 10"></button>
-    <button type="button" data-bs-target="#carouselSouvenirs" data-bs-slide-to="10" aria-label="Slide 11"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" v-for= "souvenir in souvenirs" :key="souvenir.id" >
-      <img :src= "souvenir.image" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>{{ souvenir.name }}</h5>
-        <p>{{ souvenir.description }}</p>
-        <a :href="'#'+souvenir.id">Ver más</a>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselSouvenirs" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselSouvenirs" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+<section id="heroSouvenir">
+  <img src="../assets/cover.jpg" alt="">
+  <p>Proximamente, nuevas sorpresas de nuestros artesanos locales.</p>
+</section>  
 <section v-for="souvenir in souvenirs" class="container" :id ="souvenir.id">
   <div class="row">
     <h2>{{ souvenir.name }}</h2>
@@ -83,14 +54,56 @@ export default {
 </script>
 
 <style scoped>
-#carouselSouvenirs img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
 /* #products__cards{
     background-color: #F2F0EB ;
     padding: 2rem;
   } */
 
+.container {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  text-align: end;
+}
+.container p{
+  text-align: end;
+  padding-top: 10rem;
+}
+button {
+  background-color:#2c3e50;
+}
+
+.carousel-inner a {
+color: #c5c5c5;
+}
+#heroSouvenir{
+  height: 20rem;
+  position: relative;
+}
+#heroSouvenir img{
+  width: 100%; 
+  height: inherit;
+  object-fit: cover; 
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+}
+
+#heroSouvenir p {
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  left: 50%;
+  color: blanchedalmond;
+  font-size: large;
+}
+.descripcion {
+  text-align: center;
+  
+}
+@media screen  and (min-width: 768px) {
+  #heroSouvenir{
+  height: 30rem;
+}
+}
 </style>
