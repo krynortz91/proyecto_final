@@ -57,8 +57,8 @@
           <div class="modaltextobody">
             Disculpa las molestias, estamos preparando un mejor paraiso. Queremos darte lo mejor. 
           
-          <form>
-
+          <!-- Mostrar el formulario solo si showForm es verdadero -->
+          <form v-if="showForm">
           <div class="form-group">
             <label for="name">Nombre y Apellido</label>
             <input type="text" class="form-control" v-model="nombre" id="name" placeholder="Nombre y Apellido">
@@ -74,8 +74,13 @@
           </select>
 
           <button  @click.prevent="validarDatos()" type="submit">Enviar</button>
+          <!-- Mostrar un mensaje de confirmación solo si showForm es falso -->
         </form>
       </div>
+      <!-- Mostrar un mensaje de confirmación solo si showForm es falso -->
+    <!-- <div (v-else)>
+      <p>Formulario enviado correctamente!</p>
+    </div> -->
           <div class="modal-footer">
             <button type="button" class="btn" data-bs-dismiss="modal">CERRAR</button>
           </div>
@@ -96,7 +101,8 @@ export default {
       domos: [],
       cargando: false,
       nombre: "",
-      mail:""
+      mail:"",
+      showForm: true // mostrar el formulario por defecto
     };
   },
   computed: {
@@ -123,10 +129,15 @@ export default {
         // console.log("faltatexto");
         alert("Falta el correo");
       }
-      else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(this.correoIngresado)){
+      else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(this.mail)){
         // console.log("faltatexto");
         alert("Correo no válido");
       }
+      else {
+        // Todas las validaciones han pasado, el formulario se envió correctamente
+        this.showForm = false;
+        alert("Formulario enviado correctamente!");
+  }
       
     
   }

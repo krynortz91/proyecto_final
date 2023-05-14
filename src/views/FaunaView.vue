@@ -4,9 +4,13 @@
             <div class="col" v-for="ave in aves">
                 <div class="card h-100">
                 <img :src="ave.images.main" class="card-img-top" alt="...">
+                <!-- <img :src="ave.images.map" class="card-img-top" alt="..."> -->
+                
+
                 <div class="card-body">
                     <h5 class="card-title">{{ ave.name.spanish }}</h5>
                     <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+                    <!-- <h4 class= "card-description">{{ ave.iucn.description }}</h4> -->
                 </div>
                 </div>
             </div>
