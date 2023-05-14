@@ -4,7 +4,7 @@
             <div class="col" v-for="ave in aves">
                 <div class="card h-100">
                 <img :src="ave.images.main" class="card-img-top" alt="...">
-                <!-- <img :src="ave.images.map" class="card-img-top" alt="..."> -->
+                <!-- <img :src="ave.map.images" class="card-img-top" alt="..."> -->
                 
 
                 <div class="card-body">
@@ -37,7 +37,7 @@ export default {
     try {
         let promesa = await fetch('https://aves.ninjas.cl/api/birds')
          let birds = await promesa.json();
-        this.aves = birds.slice(0, 10);
+        this.aves = birds.slice(0, 12);
         console.log(this.aves);
     } catch (error) {
       console.error(error);
