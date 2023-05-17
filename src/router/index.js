@@ -3,11 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import DomosView from '../views/DomosView'
 import SouvenirsView from '../views/SouvenirsView'
 import FaunaView from '../views/FaunaView'
+import CardImagenes from '../components/CardImagenes.vue'
+// import RankingView from '../views/RankingView.vue'
 import NotFound from '../views/NotFound'
-
-
-
-
 
 
 const routes = [
@@ -27,29 +25,42 @@ const routes = [
     name: 'domos',
     component: DomosView
   },
-  {
-    path: '/aves',
+  { 
+    path: '/aves', 
     name: 'aves',
-    component: FaunaView
+  component: FaunaView,
+  children: [
+    {
+      path: ':id',
+      name: 'cardimagenes',
+      component: CardImagenes
+    }
+  ]
+
   },
+
+  // { 
+  //   path: '/aves/:id', 
+  //   name: 'aves',
+  // component: CardImagenes 
+  // },
+  
+
+  //   children: [
+  //     {
+  //       path: ':id',
+  //       name: 'cardimagenes',
+  //       component: CardImagenes
+  //     }
+  //   ]
+  // },
+
   { 
     path: '/:pathMatch(.*)*',
     name: 'NotFoundView',
     component: NotFound
-    }  
-  // {
-  //   path: '/products',
-  //   name: 'products',
-  //   component: Products
-  // }
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  // }
+    } 
+  
 ]
 
 const router = createRouter({

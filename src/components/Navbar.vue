@@ -14,6 +14,8 @@
             <router-link class="link-nav px-3" to="/domos">Domos</router-link>
             <router-link class="link-nav px-3" to="/souvenirs">Souvenirs</router-link>
             <router-link class="link-nav px-3" to="/aves">Aves</router-link>
+            <!-- <router-link class="link-nav px-3" to="/ranking">Ranking</router-link> -->
+           
           </ul>
           <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
